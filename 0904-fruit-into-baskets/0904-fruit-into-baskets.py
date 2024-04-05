@@ -5,11 +5,11 @@ class Solution:
         right=0
         hashmap={}
         while(right<len(fruits) and left<len(fruits)):
-            print(Max)
+         
             if fruits[right] in hashmap:
                 hashmap[fruits[right]]+=1
                 if len(hashmap)>2:
-                     print("does length exceed")
+                   
                      hashmap[fruits[left]]=hashmap[fruits[left]]-1
                      if hashmap[fruits[left]]==0:
                          hashmap.pop(fruits[left])
@@ -25,7 +25,7 @@ class Solution:
             else:
                 hashmap[fruits[right]]=1
                 if len(hashmap)>2:
-                    print("does length exceed")
+                  
                     hashmap[fruits[left]]-=1
                     if hashmap[fruits[left]]==0:
                         hashmap.pop(fruits[left])
