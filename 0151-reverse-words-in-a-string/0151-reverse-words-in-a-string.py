@@ -7,8 +7,6 @@ class Solution:
         ans=""
         firstelement=2
         for i in range(len(splited_word)-1,-1,-1):
-           
-                
 
         
             if splited_word[i]=='':
