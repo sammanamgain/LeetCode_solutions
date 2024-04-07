@@ -1,23 +1,21 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        splited_word=[]
-        splited_word=s.split(' ')
-        print(splited_word)
-
+        s=" "+s+" "
         ans=""
-        firstelement=2
-        for i in range(len(splited_word)-1,-1,-1):
-
+        firstindex=-1
+        for i in range(len(s)-2,-1,-1):
+            if s[i] !="" and s[i]!=" " and s[i+1]==" ":
+                firstindex=i
+                print(firstindex)
+            elif s[i]==" " or s[i]=="":
+                if s[i+1]!=" " and  s[i+1]!="":
+                    ans=ans+s[i+1:firstindex+1]+" "
+                    print(ans)
+        n=len(ans)
         
-            if splited_word[i]=='':
-                pass
-            elif firstelement==2 :
-                
-                ans=ans+splited_word[i]
-                firstelement=3
-            else:
-                ans=ans+" "+splited_word[i]
-        return ans
+        return ans[0:n-1]
+
+
         
 
         
