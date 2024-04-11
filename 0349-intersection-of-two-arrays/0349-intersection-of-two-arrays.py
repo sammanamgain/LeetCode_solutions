@@ -3,10 +3,10 @@ class Solution:
         intersection=[]
         nums1=set(nums1)
         nums2=set(nums2)
-        for i in nums1:
-            for j in nums2:
-                if i==j:
-                    intersection.append(i)
+        
+        for j in nums2:
+            if j in nums1:
+                intersection.append(j)
         
         
         
