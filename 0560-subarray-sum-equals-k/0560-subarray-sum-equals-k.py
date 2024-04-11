@@ -10,17 +10,17 @@ class Solution:
         for i in nums:
             print(i)
             sum += i
-            print("printing sum till now",sum)
+         
             diff = sum - k
-            print("printing differences",diff)
+          
             if diff in hashmap:
-                print("yes diff")
+              
                 count += hashmap[diff]
             if sum in hashmap:
                 hashmap[sum]+=1
             else:
                 hashmap[sum]=1
-            print(hashmap)
+           
         return count
 
 
