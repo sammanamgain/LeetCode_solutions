@@ -1,18 +1,19 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        anagramslist={}
-        result=[]
-        
-        for s in strs:
-            sorteds=tuple(sorted(s))
-            if sorteds in anagramslist:
-                anagramslist[sorteds].append(s)
+        hashmap={}
+        for i in strs:
+            
+            k=sorted(i)
+            key=""
+            key=key.join(k)
+
+   
+            if key in hashmap:
+                hashmap[key].append(i)
             else:
-                anagramslist[sorteds]=[]
-                anagramslist[sorteds].append(s)
+                hashmap[key]=[i]
         
-        for i in anagramslist.values():
-            result.append(i)
-        return result
-                
-        
+        output=[]
+        for key,value in hashmap.items():
+            output.append(value)
+        return output
