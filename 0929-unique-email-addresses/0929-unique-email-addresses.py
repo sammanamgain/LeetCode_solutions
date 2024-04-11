@@ -1,6 +1,6 @@
 class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
-        Email=set()
+        Email={}
         for i in emails:
             firstpart,secondpart=i.split('@')
            
@@ -12,7 +12,10 @@ class Solution:
          
             uniqueemail=summationbefore+'@'+secondpart
       
-            Email.add(uniqueemail)
+            if uniqueemail not in  Email:
+                Email[uniqueemail]=1
+            
+
           
         return len(Email)
 
