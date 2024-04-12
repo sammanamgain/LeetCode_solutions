@@ -8,13 +8,8 @@ class Solution(object):
             if s[r] not in hashmap:
                 count=max(count,r-l+1)
                 hashmap[s[r]]=1
-                print(s[r])
                 r+=1
-                
-                
-                print(hashmap)
             else:
-                print(hashmap)
                 hashmap[s[l]]= hashmap[s[l]]-1
                 if hashmap[s[l]]==0:
                     hashmap.pop(s[l])
