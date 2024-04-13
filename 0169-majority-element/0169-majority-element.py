@@ -1,24 +1,23 @@
-class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
 
-        ele=nums[0]
-        count=0
+        hashmap={}
         for i in nums:
-            if (ele==i):
-                count+=1
+            if i in hashmap:
+                hashmap[i]+=1
             else:
-                count-=1
-            if count==0:
-                ele=i
-                count=1
+                hashmap[i]=1
+        Max=-1
+        frequent=-1
+        for key,values in hashmap.items():
+            if values>Max:
+                Max=max(Max,values)
+                frequent=key
+            
+        return frequent
+
         
-        #verify the count
-        finalcount=0
-        for i in nums:
-            if (i==ele):
-                finalcount+=1
-        print(ele)
-        if(finalcount>len(nums)//2):
-            return ele
-        else:
-            return 0
