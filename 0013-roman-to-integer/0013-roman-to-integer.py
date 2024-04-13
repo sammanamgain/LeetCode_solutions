@@ -9,20 +9,18 @@ class Solution:
                 combined=s[i]+s[i+1]
          
             if combined in dictionary:
-                print(combined)
+                
                 
                 ans+=int(dictionary[str(combined)])
-                print("answer",ans)
-                print(dictionary[str(combined)])
+               
               
                 i+=2
-                print(i)
+               
             elif s[i] in dictionary:
-                print(s[i])
-                print(dictionary[s[i]])
+               
                 ans+=int(dictionary[s[i]])
-                print("answer",ans)
+               
                 i+=1
-                print(i)
+              
         return ans
         
