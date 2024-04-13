@@ -8,7 +8,7 @@ class Solution:
        
         result=[]
         while(p<len(nums)-2):
-            print("value of p",p)
+          
             q=p+1
             r=len(nums)-1
 
