@@ -8,7 +8,7 @@ class Solution:
         l=m-1
         r=n-1
         while(l>=0 and r>=0):
-            print(nums1[l],nums2[r])
+            
             if nums1[l]>=nums2[r]:
                 nums1[length]=nums1[l]
                 l-=1
