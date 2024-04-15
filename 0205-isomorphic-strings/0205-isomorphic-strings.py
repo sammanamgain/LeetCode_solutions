@@ -4,6 +4,8 @@ class Solution:
         hashmap1={}
         l = 0
         r = 0
+        if len(s)!=len(t):
+            return False
         while l < len(s) and r < len(t):
             if s[l] not in hashmap:
 
