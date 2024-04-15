@@ -5,7 +5,7 @@ class Solution:
         lastindex=-1
         while(lastindex>=(-len(s))):
             if s[lastindex].isalpha():
-                print(s[lastindex])
+               
                 return len(s[lastindex])
             else:
                 lastindex-=1
