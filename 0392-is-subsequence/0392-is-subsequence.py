@@ -1,6 +1,7 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         # using two pointer approach
+        # time complexity O(N+M)
         l=0
         r=0
         while(l<len(s) and r<len(t)):
