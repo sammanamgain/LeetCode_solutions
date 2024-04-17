@@ -23,7 +23,7 @@ class Solution:
                 
                 else:
                     n=sum
-                    print(n)
+                
                     result.add(n)
                     sum=0
                     
