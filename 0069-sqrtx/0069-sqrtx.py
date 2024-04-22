@@ -12,6 +12,8 @@ class Solution:
             elif (i*i)>x:
                 exceeded_value=i
                 break
+        if exceeded_value==0:
+            exceeded_value=(x//2)+1
        
         return (exceeded_value-1)
         
