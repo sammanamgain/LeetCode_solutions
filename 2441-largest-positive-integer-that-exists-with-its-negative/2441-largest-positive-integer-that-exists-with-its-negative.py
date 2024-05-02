@@ -11,7 +11,7 @@ class Solution:
         #     else:
         #         nums.remove(currmax)
         #         print(nums)
-        print(len(nums))
+        
         nums.sort()
         l=0
         r=len(nums)-1
