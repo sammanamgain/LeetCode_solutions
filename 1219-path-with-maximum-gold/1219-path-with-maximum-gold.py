@@ -1,5 +1,8 @@
 class Solution:
     def getMaximumGold(self, grid: List[List[int]]) -> int:
+
+        # watch backtracking again for more explaination 
+        
         dx=(-1,0,0,1)
         dy=(0,-1,1,0)
         n=len(grid)
