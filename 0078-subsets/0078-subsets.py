@@ -17,16 +17,16 @@ class Solution:
         if i == len(nums):
 
             self.answer.append(temp[::])
-            print(self.answer)
+            
             return
-        # not take i
+        #  take i
         temp.append(nums[i])
 
         self.generatesubset(nums, temp, i + 1)
-
+   # lets not take i
         temp.pop()
         self.generatesubset(nums, temp, i + 1)
 
-        # lets take i
+     
 
         return
