@@ -11,15 +11,19 @@ class Solution:
         while j < len(cost) and i < len(cost):
             sum += cost[j]
 
-            if sum > maxCost:
-                sum -= cost[i] + cost[j]
+            # if sum > maxCost:
+            #     sum -= cost[i] + cost[j]
 
-                i += 1
+            #     i += 1
 
-            else:
+            while(sum>maxCost):
+                sum-=cost[i]
+                i+=1
 
-                Max = max(Max, j - i + 1)
+            # else:
 
-                j += 1
+            Max = max(Max, j - i + 1)
+
+            j += 1
 
         return Max
