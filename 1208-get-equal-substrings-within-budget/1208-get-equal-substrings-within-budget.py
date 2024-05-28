@@ -1,11 +1,8 @@
 class Solution:
     def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
-        cost = []
+        
         length = 0
-        for i, j in zip(s, t):
-
-            diff = abs(ord(i) - ord(j))
-            cost.append(diff)
+        cost=[ abs(ord(i)-ord(j))  for i ,j in zip(s,t)]
         i = 0
         j = 0
         sum = 0
