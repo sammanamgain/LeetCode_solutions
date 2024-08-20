@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0102-binary-tree-level-order-traversal](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0102-binary-tree-level-order-traversal) |
+| [0975-range-sum-of-bst](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0975-range-sum-of-bst) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -15,6 +16,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0102-binary-tree-level-order-traversal](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0102-binary-tree-level-order-traversal) |
+| [0975-range-sum-of-bst](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0975-range-sum-of-bst) |
 ## Stack
 |  |
 | ------- |
@@ -23,4 +25,9 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0975-range-sum-of-bst](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0975-range-sum-of-bst) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0975-range-sum-of-bst](https://github.com/sammanamgain/LeetCode_solutions/tree/master/0975-range-sum-of-bst) |
 <!---LeetCode Topics End-->
